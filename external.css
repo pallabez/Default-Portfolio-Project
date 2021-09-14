@@ -1,0 +1,426 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+/*-----main-----*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+main section:nth-child(2n) {
+    background-color: rgb(241, 241, 241);
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    color: #2857a4;
+}
+
+/*about*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+
+/*skills*/
+
+#skill-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.skill-display {
+    width: 8rem;
+    margin: 2rem 3rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+
+}
+
+.skill-display div {
+    height: inherit;
+    vertical-align: middle;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.skill-display span {
+    font-size: 1rem;
+    height: inherit;
+    vertical-align: middle;
+    margin-left: 0.8rem;
+    color: white;
+}
+
+
+
+#cpp {
+    width: 90%;
+    background-color: #2857a4;
+}
+
+#html {
+    width: 70%;
+    background-color: rgb(255, 104, 49);
+}
+#css {
+    width: 60%;
+    background-color: rgb(140, 90, 125);
+}
+#javascript {
+    width: 50%;
+    background-color: rgb(13, 105, 88);
+}
+#node-js {
+    width: 40%;
+    background-color: #2857a4;
+}
+#mongo-db {
+    width: 45%;
+    background-color: rgb(140, 90, 125);
+}
+
+/*portfolio*/
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    width: 70%;
+}
+
+.project-display {
+    margin: 2rem;
+}
+
+.project-display img{
+    width: 13rem;
+}
+
+.project-display:hover {
+    background-color: rgb(196, 195, 195, 0.4);
+}
+
+/*contact*/
+
+#contact {
+    height: auto;
+    width: 100%;
+
+    background-image: linear-gradient(to top right, #2857a4, #403066);
+}
+
+#contact-heading {
+    color: white;
+}
+
+#contact-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#msg-form {
+    margin: 3rem;
+    width: 30%;
+    padding-left: 10%;
+}
+
+#information {
+    margin: 3rem;
+    width: 40%;
+    color: white;
+}
+
+#msg-form input, #msg-form textarea{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 0.9rem;
+    display: block;
+
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+#msg-form input {
+    height: 2rem;
+}
+
+#msg-form textarea {
+    height: 3rem;
+}
+
+#msg-form input[type = "submit"] {
+    border: 2px solid white;
+    width: 30%;
+    min-width: 6rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.information-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.information-detail {
+    font-size: 1rem;
+    margin-top: 4px;
+    text-align: justify;
+}
+
+/*experience & education*/
+
+#experience-display, #education-display {
+    position: relative;
+    width: 70%;
+}
+
+.experience-box, .education-box{
+    position: relative;
+    width: 42%;
+    min-height: 10rem;
+    left: 4%;
+
+    margin: 4px;
+}
+
+.experience-box:nth-child(2n), .education-box:nth-child(2n) {
+    left: 53%;
+}
+
+
+#experience-dotted-line, #education-dotted-line {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    border-left: 3px dashed #0096fa6b;
+    width: 0px;
+    height: 75%;
+}
+
+#education-dotted-line {
+    height: 67%;    
+}
+
+#traveller {
+    position: sticky;
+    top: 35%;
+    left: 0;
+    z-index: 2;
+
+    margin-left: -7px;
+    margin-top: -2rem;
+    transform: rotate(90deg);
+    color: #2857a4;
+}
+
+.experience-box::after{
+    content: "";
+    background-color: rgb(122, 122, 122);
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    z-index: 1;
+
+    top: 49%;
+    right: -10%;
+}
+
+.education-box::after {
+    content: "";
+    background-color: rgb(122, 122, 122);
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    z-index: 1;
+
+    top: 37%;
+    right: -10%;
+}
+
+.experience-box:nth-child(2n)::after, .education-box:nth-child(2n)::after {
+    left: -8.75%;
+}
+
+.experience-box > div, .education-box > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.experience-box > p, .education-box > p {
+    font-size: 1rem;
+    word-spacing:initial;
+    text-align: justify;
+    color: gray;
+    margin-top: 0.9rem;
+}
+
+.experience-heading-title, .education-heading-title {
+    display: inline-block;
+}
+
+.experience-heading-title > div, .education-heading-title > div {
+    text-align: end;
+}
+
+.experience-logo, .education-logo{
+    display: inline-block;
+    color: rgb(212, 113, 77);
+}
+
+.designation, .Degree {
+    color: #2857a4;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.company-name, .institute-name {
+    color:rgb(212, 113, 77);
+    font-size: 1.2rem;
+}
+
+.job-duration, .education-duration {
+    color: rgb(105, 104, 104);
+    font-size: 1rem;
+}
+
+/*Education*/
+
