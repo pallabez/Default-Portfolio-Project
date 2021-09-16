@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: sans-serif;
     font-size: 30px;
+    width: 100vw;
 }
 
 
@@ -218,12 +219,9 @@ main section:nth-child(2n) {
     width: 70%;
 }
 
-.project-display {
-    margin: 2rem;
-}
 
 .project-display img{
-    width: 13rem;
+    width: 16rem;
 }
 
 .project-display:hover {
@@ -250,13 +248,13 @@ main section:nth-child(2n) {
 }
 
 #msg-form {
-    margin: 3rem;
+    margin: 3rem 0;
     width: 30%;
-    padding-left: 10%;
+    padding-left: 0;
 }
 
 #information {
-    margin: 3rem;
+    margin: 3rem 0;
     width: 40%;
     color: white;
 }
@@ -286,7 +284,6 @@ main section:nth-child(2n) {
 #msg-form input[type = "submit"] {
     border: 2px solid white;
     width: 30%;
-    min-width: 6rem;
     margin: auto;
     margin-top: 2rem;
 }
@@ -301,6 +298,7 @@ main section:nth-child(2n) {
     font-size: 1rem;
     margin-top: 4px;
     text-align: justify;
+    overflow-wrap: break-word;
 }
 
 /*experience & education*/
@@ -420,4 +418,49 @@ main section:nth-child(2n) {
 .job-duration, .education-duration {
     color: rgb(105, 104, 104);
     font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .experience-box:nth-child(2n), .education-box:nth-child(2n) {
+        left: 0;
+    }
+
+    .experience-box, .education-box {
+        width: 75%;
+        left: unset;
+    }
+    
+    #experience-dotted-line, #education-dotted-line {
+        left: 95%;
+    }
+
+    .experience-box::after, .education-box::after{
+        right: -27%;
+    }
+    .experience-box:nth-child(2n)::after, .education-box:nth-child(2n)::after {
+        left: unset;
+    }
+    
+    #contact-lower {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #msg-form {
+        width: 100%;
+    }
+
+    #information {
+        width: 80%;
+    }
+
+    #projects {
+        width: 95%;
+    }
+
+    .skill-display {
+        width: 16rem;
+        margin: 2rem 1rem;
+    }
 }
