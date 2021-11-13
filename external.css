@@ -183,28 +183,28 @@ main section:nth-child(2n) {
 
 
 #cpp {
-    width: 90%;
+    /* width: 90%; */
     background-color: #2857a4;
 }
 
 #html {
-    width: 70%;
+    /* width: 70%; */
     background-color: rgb(255, 104, 49);
 }
 #css {
-    width: 60%;
+    /* width: 60%; */
     background-color: rgb(140, 90, 125);
 }
 #javascript {
-    width: 50%;
+    /* width: 50%; */
     background-color: rgb(13, 105, 88);
 }
 #node-js {
-    width: 40%;
+    /* width: 40%; */
     background-color: #2857a4;
 }
 #mongo-db {
-    width: 45%;
+    /* width: 45%; */
     background-color: rgb(140, 90, 125);
 }
 
